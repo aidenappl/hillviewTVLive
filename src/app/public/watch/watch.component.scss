@@ -1,0 +1,32 @@
+.vpl {
+    width: 960px;
+    height: 540px;
+}
+
+@media screen and (max-width: 1000px) {
+    .vpl {
+        width: calc(16px * 50) !important;
+        height: calc(9px * 50) !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .vpl {
+        width: calc(16px * 40) !important;
+        height: calc(9px * 40) !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .vpl {
+        width: calc(16px * 30) !important;
+        height: calc(9px * 30) !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .vpl {
+        width: calc(16px * 20) !important;
+        height: calc(9px * 20) !important;
+    }
+}
