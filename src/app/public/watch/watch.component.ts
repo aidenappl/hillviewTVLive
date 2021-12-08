@@ -29,6 +29,7 @@ export class WatchComponent implements OnInit {
       console.log('onPlayerReady', this);
     });
   }
+  
   ngOnDestroy() {
     // destroy player
     if (this.player) {
