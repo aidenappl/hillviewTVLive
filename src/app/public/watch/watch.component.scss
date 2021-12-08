@@ -2,7 +2,29 @@
 .vpl {
     width: 960px;
     height: 540px;
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.5);
 }
+
+.live-blip {
+    display: flex;
+    position: absolute;
+    height: 20px;
+    width: fit-content;
+    right: 0px;
+    margin-top: 20px;
+    p {
+        position: relative;
+        padding-right: 6px;
+    }
+    .blip {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        background: red;
+        border-radius: 50%;
+    }
+}
+
 
 @media screen and (max-width: 1000px) {
     .vpl {
