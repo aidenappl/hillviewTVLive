@@ -10,7 +10,7 @@ import videojs from 'video.js';
 export class WatchComponent implements OnInit {
 
   @ViewChild('target', { static: true }) target!: ElementRef;
-  // see options: https://github.com/videojs/video.js/blob/maintutorial-options.html
+
   @Input() options!: {
       fluid: boolean,
       aspectRatio: string,
@@ -20,9 +20,11 @@ export class WatchComponent implements OnInit {
           type: string,
       }[],
   };
+
   player!: videojs.Player;
 
   showSplash = false;
+  showCTG = true;
 
   constructor() { }
 
@@ -43,7 +45,17 @@ export class WatchComponent implements OnInit {
 
     this.player.on('play', () => {
       this.showSplash = false;
+      this.showCTG = false;
     });
+
+    setTimeout(() => {
+      this.player.play();
+    }, 2000)
+  }
+
+  join() {
+    this.showCTG = false;
+    this.player.play();
   }
   
   ngOnDestroy() {

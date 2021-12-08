@@ -17,6 +17,32 @@ h2 {
     z-index: 10;
 }
 
+.click-to-join {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+    button {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.1);
+        left: 50%;
+        width: 220px;
+        height: 60px;
+        background: #197bff;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 19px;
+    }
+}
+
 .footer {
     width: 100%;
     height: 100px;
