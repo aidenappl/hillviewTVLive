@@ -22,11 +22,27 @@ export class WatchComponent implements OnInit {
   };
   player!: videojs.Player;
 
+  showSplash = false;
+
   constructor() { }
 
   ngOnInit(): void {
-    this.player = videojs(this.target.nativeElement, this.options, function onPlayerReady() {
+    this.player = videojs(this.target.nativeElement, this.options, () => {
       console.log('onPlayerReady', this);
+    });
+
+    this.player.on('error', () => {
+      console.log('error')
+      this.showSplash = true;
+    });
+    
+    this.player.on('ended', () => {
+      console.log('ended')
+      this.showSplash = true;
+    });
+
+    this.player.on('play', () => {
+      this.showSplash = false;
     });
   }
   

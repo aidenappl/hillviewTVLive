@@ -6,28 +6,42 @@
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     position: absolute;
-    margin-top: 20px;
     font-weight: 300;
+}
+
+.splash {
+    background-image: url('https://content.hillview.tv/thumbnails/default.jpg');
+    position: absolute;
+    z-index: 10;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
 }
 
 .live-blip {
     display: flex;
     position: absolute;
-    height: 20px;
+    height: 30px;
     width: fit-content;
     right: 0px;
-    margin-top: 20px;
     p {
         position: relative;
-        padding-right: 6px;
+        padding-right: 8px;
+        font-size: 20px;
+        height: fit-content;
     }
     .blip {
-        width: 10px;
-        height: 10px;
+        width: 11px;
+        height: 11px;
         position: relative;
         background: red;
+        box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.349);
         border-radius: 50%;
     }
 }

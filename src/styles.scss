@@ -22,6 +22,12 @@ h1, h2, h3, h4, h5, h6, p, span {
     transform: translateY(-50%);
 }
 
+.reg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .vjs-big-play-button {
     transform: translate(-50%, -50%);
     top: 50% !important;

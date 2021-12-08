@@ -1,13 +1,18 @@
 <div class="center-video-viewer fullCenter">
-    <video #target class="video-js vjs-default-skin vpl" controls poster="https://content.hillview.tv/thumbnails/default.jpg">
-        <source
-           src='https://d991339f3b92.us-west-2.playback.live-video.net/api/video/v1/us-west-2.605737100658.channel.XumnD8Q4WL2V.m3u8'
-           type="application/x-mpegURL">
-    </video>
-    <h2>HawkTalk Live Stream</h2>
-    <div class="live-blip">
-        <p class="fullYCenter">Live</p>
-        <div class="blip fullYCenter"></div>
+    <div class="video-container">
+        <div class="splash vpl reg-image" *ngIf="showSplash"></div>
+        <video #target class="video-js vjs-default-skin vpl" controls poster="https://content.hillview.tv/thumbnails/default.jpg">
+            <source
+               src='https://d991339f3b92.us-west-2.playback.live-video.net/api/video/v1/us-west-2.605737100658.channel.XumnD8Q4WL2V.m3u8'
+               type="application/x-mpegURL">
+        </video>
+    </div>
+    <div class="footer">
+        <h2 class="fullYCenter">HawkTalk Live Stream</h2>
+        <div class="live-blip fullYCenter">
+            <p class="fullYCenter">{{showSplash ? 'Off Air' : 'Live'}}</p>
+            <div class="blip fullYCenter" *ngIf="!showSplash"></div>
+        </div>
     </div>
 </div>
   
