@@ -1,24 +1,12 @@
-<!-- <div class="click-to-join" *ngIf="showCTG">
-    <button (click)="join()">
-        Click To Join!
-    </button>
-</div> -->
 <div class="center-video-viewer fullCenter">
     <div class="video-container">
-        <!-- <div class="splash vpl reg-image" *ngIf="showSplash"></div> -->
-        <!-- <video #target class="video-js vjs-default-skin vpl" controls poster="https://content.hillview.tv/thumbnails/default.jpg">
-            <source
-               src='https://d991339f3b92.us-west-2.playback.live-video.net/api/video/v1/us-west-2.605737100658.channel.XumnD8Q4WL2V.m3u8'
-               type="application/x-mpegURL">
-        </video> -->
-        <iframe class="vpl" src="https://vimeo.com/event/1646883/embed/d175f00f9b" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe class="vpl" #viewer src="https://vimeo.com/event/1646883/embed/d175f00f9b" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
     <div class="footer">
-        <h2 class="fullYCenter">HawkTalk Live Stream</h2>
-        <div class="live-blip fullYCenter">
+        <!-- <h2 class="fullYCenter">HawkTalk Live Stream</h2> -->
+        <!-- <div class="live-blip fullYCenter" [ngClass]="!showSplash ? 'active':''">
             <p class="fullYCenter">{{showSplash ? 'Off Air' : 'Live'}}</p>
             <div class="blip fullYCenter" *ngIf="!showSplash"></div>
-        </div>
+        </div> -->
     </div>
 </div>
-  
