@@ -1,19 +1,19 @@
 commands:
-    - name: start
-      description: Start the Angular development server
-      run: ng serve
-    - name: dev
-      description: Start development server with live reload
-      run: ng serve --open
-    - name: build
-      description: Build the project for production
-      run: ng build --configuration production
-    - name: build:watch
-      description: Build and watch for changes
-      run: ng build --watch --configuration development
-    - name: test
-      description: Run unit tests via Karma
-      run: ng test
-    - name: install
-      description: Install dependencies
-      run: npm install
+  - name: start
+    description: Start the Angular development server
+    run: ng serve
+  - name: dev
+    description: Start development server with live reload
+    run: ng serve --open
+  - name: build
+    description: Build the project for production
+    run: ng build --configuration production
+  - name: build:watch
+    description: Build and watch for changes
+    run: ng build --watch --configuration development
+  - name: test
+    description: Run unit tests via Karma
+    run: ng test
+  - name: install
+    description: Install dependencies
+    run: npm install

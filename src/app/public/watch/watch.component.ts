@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WatchComponent implements OnInit {
   showSplash = true;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
