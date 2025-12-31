@@ -1,6 +1,4 @@
-import { HttpRequest, HttpResponse } from '@angular/common/http';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { RequestService } from 'src/services/http/request.service';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-watch',
@@ -10,9 +8,7 @@ import { RequestService } from 'src/services/http/request.service';
 export class WatchComponent implements OnInit {
   showSplash = true;
 
-  constructor(private request: RequestService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

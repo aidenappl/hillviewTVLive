@@ -1,5 +1,9 @@
 # HillviewTVLive
 
+> ⚠️ **DEPRECATED**: This repository is no longer actively maintained. The codebase uses Angular 12 (2021) which has known security vulnerabilities. Use at your own risk.
+
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
 ## Development server
